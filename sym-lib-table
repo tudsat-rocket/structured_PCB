@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "WA-SMSR_9775XXX360")(type "KiCad")(uri "${KIPRJMOD}/common/WA-SMSR_9775XXX360.kicad_sym")(options "")(descr ""))
+  (lib (name "Würth connectors")(type "KiCad")(uri "${KIPRJMOD}/common/6620XX236022_662004236022.kicad_sym")(options "")(descr ""))
+)
