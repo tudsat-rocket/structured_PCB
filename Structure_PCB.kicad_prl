@@ -1,31 +1,26 @@
 {
   "board": {
-<<<<<<< HEAD
-    "active_layer": 2,
-    "active_layer_preset": "",
-=======
-    "active_layer": 5,
+    "active_layer": 0,
     "active_layer_preset": "All Layers",
->>>>>>> d3d9ad77a044bf4f9cdb2246e59a71bc107f94a7
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 0,
+    "high_contrast_mode": 1,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.6,
+      "images": 1.0,
       "pads": 1.0,
       "shapes": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
-      "zones": 0.6
+      "zones": 1.0
     },
     "selection_filter": {
       "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -54,8 +49,8 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_fffdffff",
-    "zone_display_mode": 0
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "zone_display_mode": 1
   },
   "git": {
     "repo_type": "",
@@ -92,16 +87,16 @@
       9
     ],
     "col_widths": [
-      162,
-      147,
+      186,
+      171,
+      112,
+      87,
+      112,
+      122,
+      112,
       91,
-      72,
-      91,
-      100,
-      91,
-      76,
-      91,
-      91
+      112,
+      112
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

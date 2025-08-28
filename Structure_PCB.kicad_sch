@@ -2695,6 +2695,76 @@
 		)
 		(uuid "fb5a47c3-dfb6-4bc0-8665-4e96afde8abe")
 	)
+	(label "SBout"
+		(at 59.69 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b4c4652-137d-4c05-b3a0-568495c3080c")
+	)
+	(label "HCout"
+		(at 149.86 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b70f8f6-bca7-4668-9bc7-b8a50995c05a")
+	)
+	(label "HCin"
+		(at 151.13 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e09a6d9-57aa-486c-86d4-2998b07662d6")
+	)
+	(label "PBin"
+		(at 59.69 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e493fae-9e76-4e01-9829-cabc1934a606")
+	)
+	(label "post_arm"
+		(at 110.49 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "471e7231-e067-4180-9003-1f86e627519e")
+	)
+	(label "pre_fuse"
+		(at 68.58 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b243a5d3-70c9-4b84-ae15-0d7e709008f7")
+	)
+	(label "SBin"
+		(at 59.69 124.46 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2720d1e-6b5b-4baa-8165-02cd85d3882e")
+	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 200.66 55.88 0)
@@ -3241,7 +3311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector:662004236022"
+		(property "Footprint" "stigma:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal"
 			(at 109.22 115.57 0)
 			(effects
 				(font
@@ -4212,7 +4282,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal"
 			(at 53.34 109.22 0)
 			(effects
 				(font

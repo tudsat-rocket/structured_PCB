@@ -187,7 +187,12 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.25,
+        0.5,
+        1.5,
+        8.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -502,7 +507,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Structure_PCB.step",
       "svg": "",
       "vrml": ""
     },
