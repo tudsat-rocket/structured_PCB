@@ -1,4 +1,4 @@
-24772199557617950
+24777470343686508
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -58442,6 +58442,27 @@ heatsink
 0
 0
 0
+Heatsink
+würth 2x2 heat pads
+SMD rectangular pad as test Point, square 2.0mm side length
+test point SMD pad rectangle square
+0
+1
+1
+Heatsink
+würth 5x5 heat pads
+SMD rectangular pad as test Point, square 2.0mm side length
+test point SMD pad rectangle square
+0
+4
+1
+Heatsink
+würth 15x15 heat pads
+SMD rectangular pad as test Point, square 2.0mm side length
+test point SMD pad rectangle square
+0
+36
+1
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
