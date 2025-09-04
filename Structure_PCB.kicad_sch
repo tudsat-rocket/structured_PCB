@@ -971,23 +971,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
-				(at 0 5.08 0)
+				(at 0 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MountingHole"
-				(at 0 3.175 0)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1012,7 +1016,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Mounting Hole without connection"
+			(property "Description" "Mounting Hole with connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1030,7 +1034,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole*Pad*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1039,9 +1043,9 @@
 					(hide yes)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "MountingHole_Pad_0_1"
 				(circle
-					(center 0 0)
+					(center 0 1.27)
 					(radius 1.27)
 					(stroke
 						(width 1.27)
@@ -1049,6 +1053,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -1951,7 +1975,7 @@
 	)
 	(text "Mounting EB\n"
 		(exclude_from_sim no)
-		(at 234.95 61.468 0)
+		(at 203.2 70.358 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1971,7 +1995,7 @@
 	)
 	(text "Mounting SB"
 		(exclude_from_sim no)
-		(at 265.43 32.258 0)
+		(at 234.442 49.784 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2022,7 +2046,7 @@
 	)
 	(text "Mounting CatsVega"
 		(exclude_from_sim no)
-		(at 207.518 62.738 0)
+		(at 206.756 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2102,7 +2126,7 @@
 	)
 	(text "Mounting MB"
 		(exclude_from_sim no)
-		(at 236.22 32.258 0)
+		(at 235.458 30.988 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2132,13 +2156,25 @@
 	)
 	(text "Mounting PB"
 		(exclude_from_sim no)
-		(at 204.47 32.258 0)
+		(at 203.708 30.734 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "f85b70e1-98c5-4c1b-8c81-c2b0962fb261")
+	)
+	(junction
+		(at 114.3 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00187e99-a89f-47e1-854b-cf72dcc5359e")
+	)
+	(junction
+		(at 199.39 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03124152-4cf2-42e9-a55f-15d6edd5346a")
 	)
 	(junction
 		(at 17.78 77.47)
@@ -2153,10 +2189,28 @@
 		(uuid "104a9c61-c5ed-43e9-96ae-2189aa5edc00")
 	)
 	(junction
+		(at 133.35 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10c32e40-e3b9-4207-978d-a4251b42bb8d")
+	)
+	(junction
 		(at 163.83 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "112ebfb9-4fdd-4fb3-af56-7fcfa2737e7e")
+	)
+	(junction
+		(at 139.7 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11ccbdb7-4962-4e13-9b8d-f98b12d6fcae")
+	)
+	(junction
+		(at 107.95 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14d74550-784c-4bac-90e8-fe244e48225b")
 	)
 	(junction
 		(at 43.18 77.47)
@@ -2169,6 +2223,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1922b490-9a03-4285-819c-63bc75920b5b")
+	)
+	(junction
+		(at 101.6 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19fbb1b6-2511-4f48-ac6e-fd3de2c0d057")
 	)
 	(junction
 		(at 55.88 90.17)
@@ -2189,6 +2249,12 @@
 		(uuid "209d970d-89ab-4ccc-938e-4773308d1972")
 	)
 	(junction
+		(at 95.25 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20f3d9b9-8ed2-476d-92db-7bcea3803c79")
+	)
+	(junction
 		(at 17.78 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2201,7 +2267,7 @@
 		(uuid "25825611-8eac-4923-9682-8dc810f2a17e")
 	)
 	(junction
-		(at 95.25 35.56)
+		(at 95.25 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2677ce8e-f75b-4d62-a1e1-7ff1c64b2e37")
@@ -2231,6 +2297,12 @@
 		(uuid "2bf1e932-ff36-4c63-8c87-b367fca866de")
 	)
 	(junction
+		(at 200.66 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2d455b04-0d45-48cc-9dac-e1bb19912c38")
+	)
+	(junction
 		(at 44.45 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2243,6 +2315,12 @@
 		(uuid "31d9e061-25f6-47b0-9ced-d69e37a22657")
 	)
 	(junction
+		(at 133.35 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36c69fd9-8711-4ed1-854e-c0a27bc27364")
+	)
+	(junction
 		(at 120.65 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2253,6 +2331,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "386a8133-19bc-4b0d-b12c-c79779a338d6")
+	)
+	(junction
+		(at 139.7 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b14c39d-45c2-4f81-ab5e-bd2e0010bce5")
 	)
 	(junction
 		(at 49.53 90.17)
@@ -2279,16 +2363,40 @@
 		(uuid "3f58f4e4-3c4d-474b-b32c-a6bc628fd37a")
 	)
 	(junction
-		(at 120.65 35.56)
+		(at 120.65 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4025d1bd-5e5e-4f6b-8c52-4847ba4441a4")
+	)
+	(junction
+		(at 114.3 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "42783bc1-e57f-4c6d-a5df-9c8e9059f349")
+	)
+	(junction
+		(at 246.38 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4285a8f2-5004-41be-8a5e-b78d6fbe753b")
+	)
+	(junction
+		(at 107.95 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43b349f2-8a5d-4312-b449-7d536f72dd45")
 	)
 	(junction
 		(at 95.25 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "441f0a2f-656d-42dc-9842-045880190df7")
+	)
+	(junction
+		(at 240.03 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "458f6c0e-711b-4396-9125-dc98c087b419")
 	)
 	(junction
 		(at 36.83 77.47)
@@ -2315,6 +2423,18 @@
 		(uuid "513fe215-69b2-4808-ac10-1a853c85f2aa")
 	)
 	(junction
+		(at 133.35 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5145a0f0-b394-400e-8761-dbec80e903eb")
+	)
+	(junction
+		(at 107.95 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57dfe09c-adaa-4e54-a560-306d29ee076a")
+	)
+	(junction
 		(at 44.45 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2339,10 +2459,16 @@
 		(uuid "62c92a3c-decb-4f63-a9c4-d06f1ed39959")
 	)
 	(junction
-		(at 127 35.56)
+		(at 127 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "632eaa34-1796-4b21-b762-0f04574db3b0")
+	)
+	(junction
+		(at 232.41 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64571d5c-6d75-47b3-ba45-a77c6daf5a3f")
 	)
 	(junction
 		(at 43.18 20.32)
@@ -2355,6 +2481,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "692c7f5f-f230-44ee-8d0c-2e93b0d56e8a")
+	)
+	(junction
+		(at 133.35 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6972ca1c-cabf-46b2-bd41-811bb5deff51")
+	)
+	(junction
+		(at 120.65 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69b7a161-84e0-4c37-9308-18eaf1945941")
+	)
+	(junction
+		(at 101.6 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c0c5db0-9d80-4f08-aa15-1b269d09e3ff")
 	)
 	(junction
 		(at 49.53 20.32)
@@ -2405,16 +2549,46 @@
 		(uuid "81bcec80-17b2-4054-a4e9-cde9d99ce0f8")
 	)
 	(junction
+		(at 120.65 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "827ffac4-7360-48aa-9029-8e8c5bc73704")
+	)
+	(junction
+		(at 120.65 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "833c159a-7c6f-42ff-bed0-d6cf41ddde40")
+	)
+	(junction
+		(at 214.63 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85a05ae2-9fa4-496b-86f4-c61be1cfb4f8")
+	)
+	(junction
 		(at 36.83 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ba9b408-94d0-40f5-b941-e831c6f93021")
 	)
 	(junction
-		(at 107.95 35.56)
+		(at 107.95 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d036aa0-782a-4c54-82ec-6b2ef84316d5")
+	)
+	(junction
+		(at 247.65 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d187f0b-307b-4e3e-b87b-b349ad1fde83")
+	)
+	(junction
+		(at 208.28 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e146c8d-8041-485e-adbf-fa2c0d274d46")
 	)
 	(junction
 		(at 93.98 140.97)
@@ -2423,16 +2597,34 @@
 		(uuid "8e99a820-0a8b-4ac8-b43a-c4380325d204")
 	)
 	(junction
+		(at 95.25 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90cb1d5f-2959-4732-a40d-3d0b16f19027")
+	)
+	(junction
+		(at 127 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "918d039e-3c0e-46f6-a20e-95e344c2a3e1")
+	)
+	(junction
 		(at 44.45 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "93ab2bdd-721e-43fc-9f21-ff9efe08f65a")
 	)
 	(junction
-		(at 139.7 35.56)
+		(at 139.7 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "958fa66c-586a-4896-b4f2-779fbdd2fad1")
+	)
+	(junction
+		(at 208.28 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9613a331-da9b-4e7d-ac3d-23705b80e8ff")
 	)
 	(junction
 		(at 43.18 90.17)
@@ -2451,6 +2643,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a08c2226-7f87-4bad-8cb7-335e72cfda2a")
+	)
+	(junction
+		(at 215.9 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a29f3caf-d80f-4b6c-84a4-0028ad53878b")
 	)
 	(junction
 		(at 55.88 49.53)
@@ -2477,28 +2675,46 @@
 		(uuid "a74ecb1c-9f05-4239-b03d-d7d756cf9141")
 	)
 	(junction
+		(at 139.7 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7675efc-64ce-455a-bfed-daa66f79a9e8")
+	)
+	(junction
 		(at 60.96 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8c87c6d-486e-45a8-addd-cc97a1d1e384")
 	)
 	(junction
-		(at 133.35 35.56)
+		(at 133.35 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab242181-b4ff-40e4-a606-200110002886")
 	)
 	(junction
-		(at 101.6 35.56)
+		(at 101.6 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b1fc2cb7-5c41-4d86-b15d-2a32189ba5a8")
+	)
+	(junction
+		(at 114.3 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3d6f56e-ebc7-4a16-bcfe-1e054549eac5")
 	)
 	(junction
 		(at 30.48 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6809324-b460-4539-8604-55f30e8b53ce")
+	)
+	(junction
+		(at 114.3 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc541661-ec04-4905-961e-010f85c92111")
 	)
 	(junction
 		(at 62.23 35.56)
@@ -2525,7 +2741,25 @@
 		(uuid "c2008926-2f9c-472b-a5d9-ad5be71c917b")
 	)
 	(junction
-		(at 114.3 35.56)
+		(at 127 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c464c582-36e8-4384-a2b8-8d2aad1dfbbb")
+	)
+	(junction
+		(at 127 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5095729-1db1-4a5f-a73c-1e7bce2c1098")
+	)
+	(junction
+		(at 207.01 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c59c9929-1873-404e-af70-720c788a03f5")
+	)
+	(junction
+		(at 114.3 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6b47570-f316-466a-8824-e969c3c14719")
@@ -2555,16 +2789,34 @@
 		(uuid "cc9eb96b-d603-43c6-b62e-1d54db9359f7")
 	)
 	(junction
+		(at 101.6 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2de607c-4cdf-4700-b959-545f6986572b")
+	)
+	(junction
 		(at 49.53 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4cab4af-e221-4899-8d18-1d054b5c81a7")
 	)
 	(junction
+		(at 107.95 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7b51bf3-a30c-4105-87ef-40ce93dff0d8")
+	)
+	(junction
 		(at 99.06 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d86d241a-a201-4c09-9f41-8bebd78511ac")
+	)
+	(junction
+		(at 120.65 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8ccbe43-9ab9-4ba5-bbf4-70940055c1ac")
 	)
 	(junction
 		(at 43.18 35.56)
@@ -2577,6 +2829,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcabb73c-b645-435b-807e-89ebf1736e26")
+	)
+	(junction
+		(at 238.76 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dddf3ad8-5904-4957-bc64-35d94b239147")
 	)
 	(junction
 		(at 91.44 125.73)
@@ -2609,6 +2867,18 @@
 		(uuid "e3bdca2a-d41f-4ae3-a50b-9b054abe8651")
 	)
 	(junction
+		(at 95.25 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7e23357-9564-469d-99f4-11282677ef3d")
+	)
+	(junction
+		(at 232.41 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8d315c6-84b5-4038-a090-f5636b69d648")
+	)
+	(junction
 		(at 60.96 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2619,6 +2889,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f329fa8e-4e5a-4a1e-99ff-649be75b737a")
+	)
+	(junction
+		(at 200.66 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f332c962-0ff3-4ba5-bdea-edca0998fd8b")
+	)
+	(junction
+		(at 127 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5528572-fc88-4c1b-855e-c5ce059604f2")
 	)
 	(junction
 		(at 44.45 140.97)
@@ -2633,10 +2915,38 @@
 		(uuid "fac30fa6-a407-4451-8d50-3351a340d155")
 	)
 	(junction
+		(at 95.25 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fcd10aaa-3507-423f-893f-95f6e8081726")
+	)
+	(junction
+		(at 139.7 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd3394da-4ac0-4b2b-a3ee-eb7472ffaa7d")
+	)
+	(junction
 		(at 30.48 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd6fea12-5e1c-4c47-92c4-91f1f4cb8a56")
+	)
+	(junction
+		(at 101.6 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffbae4cb-5926-422a-a75a-0f288b2f6e8d")
+	)
+	(wire
+		(pts
+			(xy 133.35 90.17) (xy 139.7 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003501d3-2ba6-4899-843a-b2554874ad2d")
 	)
 	(wire
 		(pts
@@ -2660,6 +2970,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 77.47) (xy 107.95 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0594be67-ff45-4074-93e8-a593456364d0")
+	)
+	(wire
+		(pts
 			(xy 43.18 146.05) (xy 44.45 146.05)
 		)
 		(stroke
@@ -2667,6 +2987,16 @@
 			(type default)
 		)
 		(uuid "05db2446-bc89-4b33-9b55-9a76d2d9a05b")
+	)
+	(wire
+		(pts
+			(xy 120.65 49.53) (xy 127 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c8dfc17-1fbe-4b52-82c4-143d8e510d89")
 	)
 	(wire
 		(pts
@@ -2700,6 +3030,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 39.37) (xy 247.65 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c85236-2ac3-4247-a591-d03dccc6d32f")
+	)
+	(wire
+		(pts
 			(xy 55.88 35.56) (xy 62.23 35.56)
 		)
 		(stroke
@@ -2707,6 +3047,16 @@
 			(type default)
 		)
 		(uuid "1590591f-508c-4ba5-97c9-d76c98c9ffa1")
+	)
+	(wire
+		(pts
+			(xy 208.28 39.37) (xy 215.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17f18767-9a83-4b67-b697-7ef1039c265c")
 	)
 	(wire
 		(pts
@@ -2760,6 +3110,26 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 77.47) (xy 114.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f774d3b-09de-4187-8186-1f505a4fe431")
+	)
+	(wire
+		(pts
+			(xy 139.7 63.5) (xy 146.05 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f89d048-8fde-4179-9fef-87d821dfca7c")
+	)
+	(wire
+		(pts
 			(xy 30.48 90.17) (xy 36.83 90.17)
 		)
 		(stroke
@@ -2790,7 +3160,17 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 35.56) (xy 127 35.56)
+			(xy 107.95 90.17) (xy 114.3 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "278e5b8c-f6e6-4247-87ce-5f174a9fd759")
+	)
+	(wire
+		(pts
+			(xy 120.65 34.29) (xy 127 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2827,6 +3207,26 @@
 			(type default)
 		)
 		(uuid "32bb1876-6612-4f95-9c33-35bbe2da8fd0")
+	)
+	(wire
+		(pts
+			(xy 107.95 49.53) (xy 114.3 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c0586c-afcb-40b7-bc54-9ff9dc0ba1cc")
+	)
+	(wire
+		(pts
+			(xy 199.39 78.74) (xy 207.01 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3316b28d-7da9-4383-88b5-1c0286fd89c7")
 	)
 	(wire
 		(pts
@@ -2900,6 +3300,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43001522-3918-45d2-b8b0-a35ac02cdc12")
+	)
+	(wire
+		(pts
 			(xy 135.89 142.24) (xy 135.89 135.89)
 		)
 		(stroke
@@ -2907,6 +3317,16 @@
 			(type default)
 		)
 		(uuid "43ce45ca-908e-43c6-9a08-5771531f0cfa")
+	)
+	(wire
+		(pts
+			(xy 95.25 90.17) (xy 101.6 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4558f682-570e-41f2-9bd5-95046aea3200")
 	)
 	(wire
 		(pts
@@ -2960,6 +3380,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 77.47) (xy 146.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cfc7730-efd6-4adc-b820-84ec7f2185d8")
+	)
+	(wire
+		(pts
+			(xy 133.35 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5027101a-5d8a-43f2-b5e5-bb1d897685ee")
+	)
+	(wire
+		(pts
 			(xy 24.13 63.5) (xy 30.48 63.5)
 		)
 		(stroke
@@ -2967,6 +3407,26 @@
 			(type default)
 		)
 		(uuid "51e71261-75ed-46cd-a7fe-34accffd56ea")
+	)
+	(wire
+		(pts
+			(xy 114.3 77.47) (xy 120.65 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5292bc5c-bbf3-473c-a30f-323c76bb79c8")
+	)
+	(wire
+		(pts
+			(xy 120.65 63.5) (xy 127 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "564c04f9-04ef-4fe5-87a0-9d8ff0492c82")
 	)
 	(wire
 		(pts
@@ -3010,7 +3470,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 35.56) (xy 139.7 35.56)
+			(xy 133.35 34.29) (xy 139.7 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3027,6 +3487,16 @@
 			(type default)
 		)
 		(uuid "5f5a24a2-3131-45fc-a7d8-f08fdffcdd98")
+	)
+	(wire
+		(pts
+			(xy 120.65 90.17) (xy 127 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5feaf953-8820-4647-a1ae-1d76346af3b9")
 	)
 	(wire
 		(pts
@@ -3050,6 +3520,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 58.42) (xy 215.9 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61eff922-8725-4532-a179-c9f73aa224da")
+	)
+	(wire
+		(pts
 			(xy 44.45 160.02) (xy 43.18 160.02)
 		)
 		(stroke
@@ -3070,6 +3550,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 77.47) (xy 133.35 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6de8ebb3-8f7b-45dd-8f8d-ae76730a1487")
+	)
+	(wire
+		(pts
 			(xy 161.29 156.21) (xy 163.83 156.21)
 		)
 		(stroke
@@ -3080,7 +3570,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 35.56) (xy 107.95 35.56)
+			(xy 101.6 34.29) (xy 107.95 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3097,6 +3587,26 @@
 			(type default)
 		)
 		(uuid "77e1f94e-4885-4ccf-ac72-1c8934c7ecd0")
+	)
+	(wire
+		(pts
+			(xy 101.6 90.17) (xy 107.95 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a635992-99d2-4f79-a606-ed754c1b83e9")
+	)
+	(wire
+		(pts
+			(xy 95.25 49.53) (xy 101.6 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3b609e-8192-47f6-aca2-cdd7d32926a0")
 	)
 	(wire
 		(pts
@@ -3127,6 +3637,36 @@
 			(type default)
 		)
 		(uuid "810a1327-492b-449b-a48d-312b9868ad41")
+	)
+	(wire
+		(pts
+			(xy 246.38 58.42) (xy 254 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8187569f-6336-4a51-8d42-03a1bf6504aa")
+	)
+	(wire
+		(pts
+			(xy 232.41 39.37) (xy 240.03 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83ad1c8d-1936-4545-b341-5f6b564699e5")
+	)
+	(wire
+		(pts
+			(xy 114.3 49.53) (xy 120.65 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "847728b0-703b-4d81-bdf6-98b2f731be3e")
 	)
 	(wire
 		(pts
@@ -3220,6 +3760,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 58.42) (xy 246.38 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f78ce83-27a2-4c07-b040-d4c2db0e693c")
+	)
+	(wire
+		(pts
 			(xy 62.23 63.5) (xy 68.58 63.5)
 		)
 		(stroke
@@ -3270,6 +3820,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 63.5) (xy 133.35 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e519be-2f36-4e9a-a12a-7ae27563426b")
+	)
+	(wire
+		(pts
 			(xy 55.88 77.47) (xy 62.23 77.47)
 		)
 		(stroke
@@ -3280,7 +3840,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 35.56) (xy 146.05 35.56)
+			(xy 139.7 34.29) (xy 146.05 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3370,6 +3930,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 90.17) (xy 133.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a44a7383-cd8d-46fe-aafb-a9deebfa3453")
+	)
+	(wire
+		(pts
 			(xy 44.45 154.94) (xy 60.96 154.94)
 		)
 		(stroke
@@ -3400,6 +3970,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 49.53) (xy 133.35 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa77ba15-9661-4e4a-8e5c-2a2397d4356e")
+	)
+	(wire
+		(pts
 			(xy 53.34 125.73) (xy 52.07 125.73)
 		)
 		(stroke
@@ -3420,13 +4000,23 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 35.56) (xy 114.3 35.56)
+			(xy 107.95 34.29) (xy 114.3 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ad2ce9f9-4e41-41da-90f2-d22b708a9059")
+	)
+	(wire
+		(pts
+			(xy 101.6 63.5) (xy 107.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae3dfcc3-c198-4b33-9a42-d5bb280d7b70")
 	)
 	(wire
 		(pts
@@ -3450,6 +4040,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 77.47) (xy 139.7 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b17580bc-7a85-467d-b557-aa9929fdad5e")
+	)
+	(wire
+		(pts
 			(xy 161.29 156.21) (xy 161.29 161.29)
 		)
 		(stroke
@@ -3467,6 +4067,16 @@
 			(type default)
 		)
 		(uuid "b7c6905a-6340-49d5-b8a5-b4802dde78bb")
+	)
+	(wire
+		(pts
+			(xy 207.01 78.74) (xy 214.63 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9e5ae92-81ef-4f7b-8639-6a6406b5d591")
 	)
 	(wire
 		(pts
@@ -3510,6 +4120,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 39.37) (xy 222.25 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bed0847a-cc4f-4159-b9c8-9016af4460c0")
+	)
+	(wire
+		(pts
 			(xy 53.34 140.97) (xy 52.07 140.97)
 		)
 		(stroke
@@ -3540,6 +4160,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 63.5) (xy 120.65 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0b1d5fd-4e6f-4f5a-b0e1-dc9fb4c53c49")
+	)
+	(wire
+		(pts
 			(xy 62.23 90.17) (xy 68.58 90.17)
 		)
 		(stroke
@@ -3550,6 +4180,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 90.17) (xy 146.05 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c539566c-82e1-46d0-a626-6726f484962e")
+	)
+	(wire
+		(pts
 			(xy 24.13 49.53) (xy 30.48 49.53)
 		)
 		(stroke
@@ -3557,6 +4197,26 @@
 			(type default)
 		)
 		(uuid "c646f23e-0a39-4b46-b33c-bba85bd7de7c")
+	)
+	(wire
+		(pts
+			(xy 95.25 63.5) (xy 101.6 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7077054-f467-493c-bdbb-553b414c6f24")
+	)
+	(wire
+		(pts
+			(xy 120.65 77.47) (xy 127 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7eea311-0007-4a3b-af58-139e95c34794")
 	)
 	(wire
 		(pts
@@ -3590,7 +4250,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 35.56) (xy 120.65 35.56)
+			(xy 114.3 34.29) (xy 120.65 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3630,6 +4290,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 90.17) (xy 120.65 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90299f3-4dce-467d-9550-9df55668b20c")
+	)
+	(wire
+		(pts
 			(xy 161.29 143.51) (xy 163.83 143.51)
 		)
 		(stroke
@@ -3637,6 +4307,16 @@
 			(type default)
 		)
 		(uuid "d95a05fe-a55a-4c98-be51-2455c4c60cae")
+	)
+	(wire
+		(pts
+			(xy 232.41 58.42) (xy 238.76 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dac7225a-8761-4eab-8ae9-c95007eca572")
 	)
 	(wire
 		(pts
@@ -3650,7 +4330,17 @@
 	)
 	(wire
 		(pts
-			(xy 127 35.56) (xy 133.35 35.56)
+			(xy 133.35 49.53) (xy 139.7 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbe6acff-6e10-4d1f-8048-e4336051d95e")
+	)
+	(wire
+		(pts
+			(xy 127 34.29) (xy 133.35 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3730,6 +4420,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 78.74) (xy 222.25 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2af4a7a-3650-4027-9205-922f468b0e18")
+	)
+	(wire
+		(pts
 			(xy 36.83 90.17) (xy 43.18 90.17)
 		)
 		(stroke
@@ -3737,6 +4437,16 @@
 			(type default)
 		)
 		(uuid "e5be39a8-0c38-4831-baee-dd4d5dd64da2")
+	)
+	(wire
+		(pts
+			(xy 101.6 49.53) (xy 107.95 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5de4d31-3f5c-4876-aaa9-eaca45ef8eef")
 	)
 	(wire
 		(pts
@@ -3750,7 +4460,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 35.56) (xy 101.6 35.56)
+			(xy 200.66 39.37) (xy 208.28 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7a93338-de96-4eed-a17d-793d422bd272")
+	)
+	(wire
+		(pts
+			(xy 95.25 34.29) (xy 101.6 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3810,6 +4530,26 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 39.37) (xy 255.27 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0ea804d-8f14-4688-a55f-9fb054562fb0")
+	)
+	(wire
+		(pts
+			(xy 139.7 49.53) (xy 146.05 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2265661-8933-435b-b594-120028d3936f")
+	)
+	(wire
+		(pts
 			(xy 36.83 63.5) (xy 43.18 63.5)
 		)
 		(stroke
@@ -3817,6 +4557,16 @@
 			(type default)
 		)
 		(uuid "f60b1bf9-7566-4176-80e7-671bc34ccbf3")
+	)
+	(wire
+		(pts
+			(xy 95.25 77.47) (xy 101.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6163fe6-66ce-407f-a50b-41f937be5c27")
 	)
 	(wire
 		(pts
@@ -3847,6 +4597,16 @@
 			(type default)
 		)
 		(uuid "f7cb3063-3b22-46f0-a7dd-a5f44f4c3940")
+	)
+	(wire
+		(pts
+			(xy 200.66 58.42) (xy 208.28 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9c03d60-fe81-4665-bb4f-0aa7f0bf08f9")
 	)
 	(wire
 		(pts
@@ -4143,8 +4903,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 55.88 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 222.25 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4153,7 +4913,7 @@
 		(fields_autoplaced yes)
 		(uuid "08334c53-7714-4f6a-ae7b-ab0913719a8f")
 		(property "Reference" "H4"
-			(at 203.2 54.6099 0)
+			(at 224.79 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,17 +4921,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 57.1499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 224.79 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 55.88 0)
+			(at 222.25 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4180,7 +4941,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 55.88 0)
+			(at 222.25 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,19 +4949,91 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 55.88 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 222.25 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f5cdb209-ebdd-45ca-856c-465f929092ed")
 		)
 		(instances
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 101.6 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a76a245-8dee-4991-824c-091ad2fa707b")
+		(property "Reference" "HS88"
+			(at 105.41 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 105.41 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 101.9048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.9048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 101.6 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b35ef26-4913-4507-a58a-4495d07259f8")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS88")
 					(unit 1)
 				)
 			)
@@ -4336,6 +5169,144 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 133.35 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d974078-2133-4b5d-9e7d-fa49d039ebfc")
+		(property "Reference" "HS97"
+			(at 137.16 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 137.16 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 133.6548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.6548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 133.35 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e89330e8-9c43-4faf-9df7-7746e4092cdf")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 114.3 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e096dd2-b2de-4d5c-b116-816e8e5bd4ac")
+		(property "Reference" "HS109"
+			(at 118.11 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 118.11 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 114.6048 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.6048 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 114.3 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b04c6db0-841f-44fa-a53e-7aec3e44d72b")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS109")
 					(unit 1)
 				)
 			)
@@ -4653,8 +5624,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 43.18 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 208.28 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4663,7 +5634,7 @@
 		(fields_autoplaced yes)
 		(uuid "13e0aece-8982-4c29-819c-5cf91ba375fc")
 		(property "Reference" "H2"
-			(at 203.2 41.9099 0)
+			(at 210.82 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4671,17 +5642,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 44.4499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 210.82 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 43.18 0)
+			(at 208.28 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,7 +5662,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 43.18 0)
+			(at 208.28 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4698,14 +5670,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 43.18 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 208.28 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "64fb48f3-7238-42aa-a7d6-bd9cfe2a598f")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -5125,8 +6100,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 261.62 43.18 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 238.76 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5135,7 +6110,7 @@
 		(fields_autoplaced yes)
 		(uuid "21e8aefc-4f82-41cf-8fd3-149d1746327e")
 		(property "Reference" "H10"
-			(at 264.16 41.9099 0)
+			(at 241.3 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,17 +6118,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 264.16 44.4499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 241.3 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 261.62 43.18 0)
+			(at 238.76 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5162,7 +6138,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 43.18 0)
+			(at 238.76 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5170,14 +6146,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 261.62 43.18 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 238.76 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "0c060237-c5f3-4506-93cb-afb89a0889f2")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -5259,7 +6238,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 127 33.02 0)
+		(at 127 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -5268,7 +6247,7 @@
 		(fields_autoplaced yes)
 		(uuid "25baec04-c1f3-4e19-981c-1e80ebd99a59")
 		(property "Reference" "HS81"
-			(at 130.81 31.1149 0)
+			(at 130.81 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,7 +6257,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 130.81 33.6549 0)
+			(at 130.81 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5288,7 +6267,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 127.3048 34.29 0)
+			(at 127.3048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5297,7 +6276,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127.3048 34.29 0)
+			(at 127.3048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5306,7 +6285,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 127 33.02 0)
+			(at 127 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,6 +6300,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 107.95 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "260ee296-ba32-47b4-b5f3-0af4df34c07b")
+		(property "Reference" "HS89"
+			(at 111.76 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 111.76 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 108.2548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.2548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 107.95 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5740e797-b92b-407f-a664-5d9d1c9cc465")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS89")
 					(unit 1)
 				)
 			)
@@ -5396,8 +6444,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 49.53 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 215.9 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5406,7 +6454,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ad8079a-5870-4d01-a87e-1e0925fd89e7")
 		(property "Reference" "H3"
-			(at 203.2 48.2599 0)
+			(at 218.44 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5414,17 +6462,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 50.7999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 218.44 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 49.53 0)
+			(at 215.9 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5433,7 +6482,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 49.53 0)
+			(at 215.9 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5441,19 +6490,367 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 49.53 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 215.9 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "cf2c4987-c5ca-4195-8a44-fcb69ec74240")
 		)
 		(instances
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 95.25 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2b9200ba-c1c1-401f-b10b-7f4d04430ad2")
+		(property "Reference" "HS85"
+			(at 99.06 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 99.06 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 95.5548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.5548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 95.25 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f53df37a-6218-4690-8e15-ed6147de37dc")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 107.95 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31b07f0d-c5e0-4f4e-a390-ee72f9ed0795")
+		(property "Reference" "HS108"
+			(at 111.76 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 111.76 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 108.2548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.2548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 107.95 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "190e0544-f215-48ad-a6ef-5bf73916f884")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 107.95 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33cff6c8-dfea-42dc-9ef2-56349f9dafe2")
+		(property "Reference" "HS107"
+			(at 111.76 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 111.76 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 108.2548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.2548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 107.95 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3306076-8e76-432c-8b11-ecd6fb9ab607")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 139.7 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34c632b8-f1aa-42db-b060-12b42fd5f854")
+		(property "Reference" "HS118"
+			(at 143.51 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 143.51 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 140.0048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.0048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 139.7 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "750050aa-8b89-4519-a0fe-7a2364584192")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 120.65 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "355a3e45-8508-42d5-b686-1e652bf7ea25")
+		(property "Reference" "HS93"
+			(at 124.46 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 124.46 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 120.9548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.9548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 120.65 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "496645fe-6ded-4952-9ca5-ac150aa57078")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS93")
 					(unit 1)
 				)
 			)
@@ -5618,8 +7015,140 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 78.74 0)
+		(lib_id "power:GND")
+		(at 199.39 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39e90c05-ed88-4626-8899-e5e4e0248a91")
+		(property "Reference" "#PWR020"
+			(at 199.39 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07a7bab2-8553-44b6-8ff0-a01f62d8d8de")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b650e33-4fe6-4709-beb8-389dab1b2643")
+		(property "Reference" "#PWR015"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ad6539e-aa98-4287-ac45-1c3c20e82b01")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 214.63 76.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -5628,7 +7157,7 @@
 		(fields_autoplaced yes)
 		(uuid "3c9613a1-11b6-4b20-bc31-ce9115519554")
 		(property "Reference" "H18"
-			(at 233.68 77.4699 0)
+			(at 217.17 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5636,17 +7165,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 233.68 80.0099 0)
+		(property "Value" "MountingHole_Pad"
+			(at 217.17 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 231.14 78.74 0)
+			(at 214.63 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5655,7 +7185,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 78.74 0)
+			(at 214.63 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5663,14 +7193,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 78.74 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 214.63 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "e8a073e8-0d94-4627-a112-2037bff7ba43")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -5814,6 +7347,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 120.65 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3eb731b6-e6f2-4a8d-9a8c-c464d4c409cd")
+		(property "Reference" "HS111"
+			(at 124.46 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 124.46 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 120.9548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.9548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 120.65 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f601969-8859-4f69-ae19-a5bae200805e")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS111")
 					(unit 1)
 				)
 			)
@@ -6596,6 +8198,414 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
+		(at 114.3 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4caccf0a-8f40-4442-b514-0252d54f1009")
+		(property "Reference" "HS91"
+			(at 118.11 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 118.11 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 114.6048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.6048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 114.3 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5e33768-8570-4090-bcf5-0c64158c1f6a")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 139.7 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d49de30-20f0-42c5-9baf-8c23abd3f2cd")
+		(property "Reference" "HS99"
+			(at 143.51 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 143.51 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 140.0048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.0048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 139.7 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "221ad118-9531-4fa3-a59e-24693fe0375d")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS99")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4fd65d00-9718-48fb-9c8b-e1deed0e9d41")
+		(property "Reference" "#PWR017"
+			(at 232.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4474d8cd-7dc1-4ba2-94b2-0b3b9a9fb7f2")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5669c623-e3c0-4328-9704-f11d645d175c")
+		(property "Reference" "#PWR013"
+			(at 95.25 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3dafbf9-f9d0-4ce5-9fd5-6b529daf93a2")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 146.05 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5762d15c-0e03-49c9-b9f9-35d52731de1c")
+		(property "Reference" "HS101"
+			(at 149.86 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 149.86 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 146.3548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.3548 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 146.05 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "084d659d-2cc3-4e8a-8647-59cc084f1727")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 120.65 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "58e05322-dab2-43b0-b5e1-b2cf4e218c5e")
+		(property "Reference" "HS94"
+			(at 124.46 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 124.46 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 120.9548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.9548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 120.65 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e67bb2bc-2459-4434-973b-dcfc8a7498b6")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS94")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
 		(at 43.18 17.78 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -6665,7 +8675,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 114.3 33.02 0)
+		(at 114.3 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -6674,7 +8684,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e222332-af79-42e1-8c11-a32bc470900a")
 		(property "Reference" "HS79"
-			(at 118.11 31.1149 0)
+			(at 118.11 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6684,7 +8694,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 118.11 33.6549 0)
+			(at 118.11 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +8704,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 114.6048 34.29 0)
+			(at 114.6048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6703,7 +8713,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.6048 34.29 0)
+			(at 114.6048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6712,7 +8722,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 114.3 33.02 0)
+			(at 114.3 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,8 +8743,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 232.41 55.88 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 255.27 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6743,7 +8753,7 @@
 		(fields_autoplaced yes)
 		(uuid "61082345-a57e-466c-8e69-644fbfcc9f5f")
 		(property "Reference" "H8"
-			(at 234.95 54.6099 0)
+			(at 257.81 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,17 +8761,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 234.95 57.1499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 257.81 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 232.41 55.88 0)
+			(at 255.27 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6770,7 +8781,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 55.88 0)
+			(at 255.27 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6778,14 +8789,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 232.41 55.88 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 255.27 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "9aeebf99-0053-43e5-8492-5d89529714a9")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -6866,7 +8880,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 200.66 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -6876,7 +8890,7 @@
 		(fields_autoplaced yes)
 		(uuid "641486bf-acc0-459a-a9e3-d5d65309fafd")
 		(property "Reference" "H1"
-			(at 203.2 35.5599 0)
+			(at 203.2 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6884,13 +8898,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 38.0999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 203.2 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
@@ -6911,7 +8926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 200.66 36.83 0)
 			(effects
 				(font
@@ -6919,6 +8934,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "3df537d8-f1b6-43ba-9ce8-d53aec3aa8d1")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -6930,8 +8948,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 261.62 36.83 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 232.41 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6940,7 +8958,7 @@
 		(fields_autoplaced yes)
 		(uuid "6441623c-e4db-4057-945e-4b4e395aaf32")
 		(property "Reference" "H9"
-			(at 264.16 35.5599 0)
+			(at 234.95 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6948,17 +8966,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 264.16 38.0999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 234.95 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 261.62 36.83 0)
+			(at 232.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6967,7 +8986,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 36.83 0)
+			(at 232.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6975,14 +8994,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 261.62 36.83 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 232.41 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f967eefa-2e44-405c-bb52-a76fbc6bd26d")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -7271,6 +9293,144 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
+		(at 101.6 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d9396a3-81fd-47d3-96d3-c6eabf7fb6cd")
+		(property "Reference" "HS87"
+			(at 105.41 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 105.41 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 101.9048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.9048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "daa8c5a2-3374-4f74-b426-7e56b74a1aac")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 114.3 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e2aa0da-9b9f-42cf-a08b-031781e4335d")
+		(property "Reference" "HS92"
+			(at 118.11 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 118.11 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 114.6048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.6048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 114.3 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "272ae11e-67d0-4e4d-8a66-0892f248e4e2")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
 		(at 43.18 60.96 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -7339,8 +9499,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 232.41 49.53 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 247.65 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7349,7 +9509,7 @@
 		(fields_autoplaced yes)
 		(uuid "730e8082-4c2c-4569-af8d-e27f487ecd78")
 		(property "Reference" "H7"
-			(at 234.95 48.2599 0)
+			(at 250.19 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7357,17 +9517,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 234.95 50.7999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 250.19 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 232.41 49.53 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7376,7 +9537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 49.53 0)
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7384,14 +9545,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 232.41 49.53 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 247.65 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "0363d86b-6e4e-4976-963d-b7b6cfa2471e")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -7469,8 +9633,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 72.39 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 207.01 76.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7479,7 +9643,7 @@
 		(fields_autoplaced yes)
 		(uuid "761002be-0129-4261-aed6-815f3ef2d43f")
 		(property "Reference" "H17"
-			(at 233.68 71.1199 0)
+			(at 209.55 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7487,17 +9651,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 233.68 73.6599 0)
+		(property "Value" "MountingHole_Pad"
+			(at 209.55 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 231.14 72.39 0)
+			(at 207.01 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7506,7 +9671,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 72.39 0)
+			(at 207.01 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7514,14 +9679,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 72.39 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 207.01 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "29f18e63-a804-4e50-a6df-d3c2b68862d6")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -7533,8 +9701,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 261.62 49.53 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 246.38 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7543,7 +9711,7 @@
 		(fields_autoplaced yes)
 		(uuid "78086358-37c9-4081-8cd2-271d969eae6f")
 		(property "Reference" "H11"
-			(at 264.16 48.2599 0)
+			(at 248.92 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7551,17 +9719,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 264.16 50.7999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 248.92 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 261.62 49.53 0)
+			(at 246.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7570,7 +9739,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 49.53 0)
+			(at 246.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7578,14 +9747,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 261.62 49.53 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 246.38 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "e72990bd-9d09-401c-a657-dc3c352bee05")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -7597,8 +9769,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 66.04 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 199.39 76.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -7607,7 +9779,7 @@
 		(fields_autoplaced yes)
 		(uuid "787c0307-d583-47c5-8b99-f61b437e9330")
 		(property "Reference" "H16"
-			(at 233.68 64.7699 0)
+			(at 201.93 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7615,17 +9787,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 233.68 67.3099 0)
+		(property "Value" "MountingHole_Pad"
+			(at 201.93 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 231.14 66.04 0)
+			(at 199.39 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7634,7 +9807,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 66.04 0)
+			(at 199.39 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7642,14 +9815,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 66.04 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 199.39 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "c1d0b074-1fac-4b8f-9a2b-c8ba968f2428")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -7727,8 +9903,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 95.25 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bcbf6bd-16ac-45a5-98bc-ec4cf9dd4ae3")
+		(property "Reference" "#PWR012"
+			(at 95.25 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd596018-7abb-423d-b143-0cf29a7f4219")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 95.25 33.02 0)
+		(at 95.25 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -7737,7 +9979,7 @@
 		(fields_autoplaced yes)
 		(uuid "7c1fa681-bfed-4e55-a171-2e4f8ca41e3d")
 		(property "Reference" "HS76"
-			(at 99.06 31.1149 0)
+			(at 99.06 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7747,7 +9989,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 99.06 33.6549 0)
+			(at 99.06 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7757,7 +9999,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 95.5548 34.29 0)
+			(at 95.5548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7766,7 +10008,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.5548 34.29 0)
+			(at 95.5548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7775,7 +10017,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 95.25 33.02 0)
+			(at 95.25 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7790,6 +10032,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 107.95 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d334fb0-f5b4-407d-8750-3cf4d5503d15")
+		(property "Reference" "HS90"
+			(at 111.76 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 111.76 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 108.2548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 108.2548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 107.95 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6c0290c-aa56-48ba-b661-d6d6cfa2e8f9")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS90")
 					(unit 1)
 				)
 			)
@@ -7859,6 +10170,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 139.7 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f239796-fff2-4a9c-8610-0057cd5d17c1")
+		(property "Reference" "HS117"
+			(at 143.51 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 143.51 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 140.0048 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.0048 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 139.7 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ba066a7-94ad-4a76-9713-6f835c8aa466")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS117")
 					(unit 1)
 				)
 			)
@@ -8004,16 +10384,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 133.35 33.02 0)
+		(at 101.6 74.93 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "817c503a-df9e-4b9c-8d64-ec1fb57d930f")
-		(property "Reference" "HS82"
-			(at 137.16 31.1149 0)
+		(uuid "805816ef-a8c1-481f-9250-7d15191a533b")
+		(property "Reference" "HS105"
+			(at 105.41 73.0249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8023,7 +10403,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 137.16 33.6549 0)
+			(at 105.41 75.5649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8033,7 +10413,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 133.6548 34.29 0)
+			(at 101.9048 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8042,7 +10422,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.6548 34.29 0)
+			(at 101.9048 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8051,7 +10431,145 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 133.35 33.02 0)
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b89d3d31-432d-412f-b169-0809b39be99a")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 133.35 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "808d80e5-f733-477f-835f-7f788b6c0eb2")
+		(property "Reference" "HS98"
+			(at 137.16 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 137.16 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 133.6548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.6548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 133.35 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ea34f0c-fe57-4aaa-a136-4eeb4a885a4e")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 133.35 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "817c503a-df9e-4b9c-8d64-ec1fb57d930f")
+		(property "Reference" "HS82"
+			(at 137.16 29.8449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 137.16 32.3849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 133.6548 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.6548 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 133.35 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8066,6 +10584,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 146.05 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82269edc-a9bc-4267-b3d5-7eb17fdff21d")
+		(property "Reference" "HS119"
+			(at 149.86 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 149.86 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 146.3548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.3548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 146.05 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc4e39fa-fc96-4614-bb88-52fcb69ccf40")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS119")
 					(unit 1)
 				)
 			)
@@ -8142,7 +10729,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 146.05 33.02 0)
+		(at 146.05 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8151,7 +10738,7 @@
 		(fields_autoplaced yes)
 		(uuid "87ba3581-19c1-4c51-a7d8-6db43ba49a61")
 		(property "Reference" "HS84"
-			(at 149.86 31.1149 0)
+			(at 149.86 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8161,7 +10748,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 149.86 33.6549 0)
+			(at 149.86 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8171,7 +10758,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 146.3548 34.29 0)
+			(at 146.3548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8180,7 +10767,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.3548 34.29 0)
+			(at 146.3548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8189,7 +10776,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 146.05 33.02 0)
+			(at 146.05 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8362,6 +10949,141 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 200.66 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bcfd30e-b58a-4b94-aed5-7bdbef2a69d6")
+		(property "Reference" "#PWR016"
+			(at 200.66 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbce34c3-37d4-41fc-92e1-98545df28b18")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 133.35 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8caf79e8-8406-471c-b58f-3d367b7f4f47")
+		(property "Reference" "HS115"
+			(at 137.16 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 137.16 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 133.6548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.6548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 133.35 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df65d24c-9cd5-4e3c-8989-ff3ba2e06806")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
 		(at 95.25 17.78 0)
 		(unit 1)
@@ -8432,7 +11154,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 101.6 33.02 0)
+		(at 101.6 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8441,7 +11163,7 @@
 		(fields_autoplaced yes)
 		(uuid "8e0d5e87-37c2-49ca-8b40-e25f72250651")
 		(property "Reference" "HS77"
-			(at 105.41 31.1149 0)
+			(at 105.41 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8451,7 +11173,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 105.41 33.6549 0)
+			(at 105.41 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8461,7 +11183,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 101.9048 34.29 0)
+			(at 101.9048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8470,7 +11192,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.9048 34.29 0)
+			(at 101.9048 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,7 +11201,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 101.6 33.02 0)
+			(at 101.6 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8500,8 +11222,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 231.14 85.09 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 222.25 76.2 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -8510,7 +11232,7 @@
 		(fields_autoplaced yes)
 		(uuid "91e36894-67f4-4eb9-826f-2a520dbab66f")
 		(property "Reference" "H19"
-			(at 233.68 83.8199 0)
+			(at 224.79 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8518,17 +11240,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 233.68 86.3599 0)
+		(property "Value" "MountingHole_Pad"
+			(at 224.79 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 231.14 85.09 0)
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8537,7 +11260,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 85.09 0)
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8545,19 +11268,88 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 231.14 85.09 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "d0064863-d2b7-46fc-89bf-9ab8a5e6c1bd")
 		)
 		(instances
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "923d9caf-c29d-4567-a4cd-895ac77c8477")
+		(property "Reference" "#PWR018"
+			(at 232.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2b4c871-3403-4567-8766-9c3e2cf1b32e")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -8906,7 +11698,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 120.65 33.02 0)
+		(at 120.65 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -8915,7 +11707,7 @@
 		(fields_autoplaced yes)
 		(uuid "9817e1f7-5c2a-4796-a07f-37872422800d")
 		(property "Reference" "HS80"
-			(at 124.46 31.1149 0)
+			(at 124.46 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8925,7 +11717,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 124.46 33.6549 0)
+			(at 124.46 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8935,7 +11727,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 120.9548 34.29 0)
+			(at 120.9548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8944,7 +11736,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.9548 34.29 0)
+			(at 120.9548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8953,7 +11745,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 120.65 33.02 0)
+			(at 120.65 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9113,7 +11905,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 107.95 33.02 0)
+		(at 107.95 31.75 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -9122,7 +11914,7 @@
 		(fields_autoplaced yes)
 		(uuid "9c53aede-5d86-4ea4-8948-2c8f39f199b1")
 		(property "Reference" "HS78"
-			(at 111.76 31.1149 0)
+			(at 111.76 29.8449 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9132,7 +11924,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 111.76 33.6549 0)
+			(at 111.76 32.3849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9142,7 +11934,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 108.2548 34.29 0)
+			(at 108.2548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9151,7 +11943,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 108.2548 34.29 0)
+			(at 108.2548 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9160,7 +11952,7 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 107.95 33.02 0)
+			(at 107.95 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9181,35 +11973,37 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 232.41 43.18 0)
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 146.05 87.63 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1d4dd57-f0a6-48e3-a92a-f3657b2fdf66")
-		(property "Reference" "H6"
-			(at 234.95 41.9099 0)
+		(uuid "a14b3be3-8a25-46ed-9400-6e27e5e573c3")
+		(property "Reference" "HS120"
+			(at 149.86 85.7249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 234.95 44.4499 0)
+		(property "Value" "Heatsink_Pad"
+			(at 149.86 88.2649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 232.41 43.18 0)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 146.3548 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9218,7 +12012,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 232.41 43.18 0)
+			(at 146.3548 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9226,14 +12020,85 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 232.41 43.18 0)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 146.05 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "c0feb0f8-1947-4857-b323-27014e28ac2f")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 36.83 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1d4dd57-f0a6-48e3-a92a-f3657b2fdf66")
+		(property "Reference" "H6"
+			(at 242.57 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 242.57 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
+			(at 240.03 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66350b35-ebda-4fbf-82bb-3e03f2be8711")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -9458,7 +12323,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 35.56 0)
+		(at 95.25 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9467,7 +12332,7 @@
 		(fields_autoplaced yes)
 		(uuid "aff2552c-53a2-428f-95f5-b95cf012a816")
 		(property "Reference" "#PWR011"
-			(at 95.25 41.91 0)
+			(at 95.25 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9476,7 +12341,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 40.64 0)
+			(at 95.25 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9484,7 +12349,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 35.56 0)
+			(at 95.25 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9493,7 +12358,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 35.56 0)
+			(at 95.25 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9502,7 +12367,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 35.56 0)
+			(at 95.25 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9661,8 +12526,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 67.31 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 200.66 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -9671,7 +12536,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4699b00-be12-4fbe-b061-40c2ffa1b80d")
 		(property "Reference" "H13"
-			(at 203.2 66.0399 0)
+			(at 203.2 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9679,17 +12544,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 68.5799 0)
+		(property "Value" "MountingHole_Pad"
+			(at 203.2 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 67.31 0)
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9698,7 +12564,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 67.31 0)
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9706,19 +12572,160 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 67.31 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 200.66 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "95bf4375-9fd2-49fc-9f26-43136d7d4314")
 		)
 		(instances
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 127 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5b4ae47-7dd1-4e77-92af-79de71c7fe12")
+		(property "Reference" "HS114"
+			(at 130.81 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 130.81 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 127.3048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127.3048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95288543-96df-491e-ad31-a862f2a1e3b1")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 95.25 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6049985-2156-4563-83f6-d530859bd1e5")
+		(property "Reference" "HS86"
+			(at 99.06 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 99.06 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 95.5548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.5548 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 95.25 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be4e4bd6-5d5c-4c2b-bc34-85a67d7abf84")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS86")
 					(unit 1)
 				)
 			)
@@ -9802,7 +12809,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 232.41 36.83 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -9812,7 +12819,7 @@
 		(fields_autoplaced yes)
 		(uuid "b6f556ef-a2be-45a6-9cbe-18bbd640debd")
 		(property "Reference" "H5"
-			(at 234.95 35.5599 0)
+			(at 234.95 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9820,13 +12827,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 234.95 38.0999 0)
+		(property "Value" "MountingHole_Pad"
+			(at 234.95 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
@@ -9847,7 +12855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "Mounting Hole with connection"
 			(at 232.41 36.83 0)
 			(effects
 				(font
@@ -9855,6 +12863,9 @@
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "e8aa405a-b048-4cfe-a54c-e9b0c7608089")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -10084,6 +13095,75 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
+		(at 127 46.99 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bcce4b74-ff11-4653-9483-eb570688f698")
+		(property "Reference" "HS95"
+			(at 130.81 45.0849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 130.81 47.6249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 127.3048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127.3048 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 127 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25ede74a-2484-4d01-8d0c-89de0e938e35")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS95")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
 		(at 36.83 87.63 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -10146,6 +13226,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 127 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c10da6a4-fc18-4bd9-97f8-6d568711a9f8")
+		(property "Reference" "HS96"
+			(at 130.81 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 130.81 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 127.3048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127.3048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 127 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd0b1543-2e53-4166-93de-3bd14647e14c")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS96")
 					(unit 1)
 				)
 			)
@@ -10566,6 +13715,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 139.7 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb879d2f-a16d-4c81-878a-3715fa5fe182")
+		(property "Reference" "HS100"
+			(at 143.51 59.0549 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 143.51 61.5949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 140.0048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.0048 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 139.7 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f3b2ba8-a4df-4330-bf62-f6a8665dadf6")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 114.3 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cca8a630-8b11-4944-a3de-76501fb8eca3")
+		(property "Reference" "HS110"
+			(at 118.11 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 118.11 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 114.6048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.6048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 114.3 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27682f2a-8025-4ba9-96d1-eecae142fc5e")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 38.1 140.97 0)
 		(unit 1)
@@ -10649,35 +13936,37 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 80.01 0)
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 146.05 60.96 0)
 		(unit 1)
 		(exclude_from_sim yes)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d39e908e-ef87-48f5-979c-9be538d8f903")
-		(property "Reference" "H15"
-			(at 203.2 78.7399 0)
+		(uuid "ce71d1e7-3a7f-4701-8b1f-25a7dc119bd0")
+		(property "Reference" "HS102"
+			(at 149.86 59.0549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 81.2799 0)
+		(property "Value" "Heatsink_Pad"
+			(at 149.86 61.5949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 80.01 0)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 146.3548 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10686,7 +13975,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 80.01 0)
+			(at 146.3548 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10694,19 +13983,297 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 80.01 0)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 146.05 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "02b4bcf3-c33a-4a5e-9cac-ae62d9098322")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 120.65 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d01010e1-d292-4e5c-9b77-119f7ebb15e3")
+		(property "Reference" "HS112"
+			(at 124.46 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 124.46 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 120.9548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.9548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de2ecd4-8793-4ef5-a13c-12bb1aa36fb4")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 215.9 55.88 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d39e908e-ef87-48f5-979c-9be538d8f903")
+		(property "Reference" "H15"
+			(at 218.44 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 218.44 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
+			(at 215.9 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 215.9 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92d1da21-3ec7-409e-bbda-34cda64d8ffe")
 		)
 		(instances
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "H15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 95.25 74.93 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d430faf3-525f-40f9-aa5f-348d26333143")
+		(property "Reference" "HS103"
+			(at 99.06 73.0249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 99.06 75.5649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 95.5548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.5548 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 95.25 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "687ec454-693f-4efc-b656-d4dd9194fb34")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 95.25 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d71516ff-b9cc-4e9b-8dbd-c8d5bcee8fbc")
+		(property "Reference" "HS104"
+			(at 99.06 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 99.06 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 95.5548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.5548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 95.25 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63214c57-5f72-4098-a886-e3a8392a0afb")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS104")
 					(unit 1)
 				)
 			)
@@ -10990,16 +14557,16 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
-		(at 139.7 33.02 0)
+		(at 127 74.93 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e9aa9f0d-8037-49ee-a042-cdd5687ed019")
-		(property "Reference" "HS83"
-			(at 143.51 31.1149 0)
+		(uuid "e3a8027d-a4da-4b94-b215-db04b3aad869")
+		(property "Reference" "HS113"
+			(at 130.81 73.0249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11009,7 +14576,7 @@
 			)
 		)
 		(property "Value" "Heatsink_Pad"
-			(at 143.51 33.6549 0)
+			(at 130.81 75.5649 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11019,7 +14586,7 @@
 			)
 		)
 		(property "Footprint" "Heatsink:würth 5x5 heat pads"
-			(at 140.0048 34.29 0)
+			(at 127.3048 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11028,7 +14595,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.0048 34.29 0)
+			(at 127.3048 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11037,7 +14604,142 @@
 			)
 		)
 		(property "Description" "Heatsink with electrical connection, 1 pin"
-			(at 139.7 33.02 0)
+			(at 127 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40fe69be-9de1-41bf-a5f9-07234ae46cae")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7d26c6a-e4c1-4ad5-abb1-59c7051ddc2f")
+		(property "Reference" "#PWR019"
+			(at 200.66 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a653679-6bd6-4ef7-8358-b4931af48cff")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 139.7 31.75 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9aa9f0d-8037-49ee-a042-cdd5687ed019")
+		(property "Reference" "HS83"
+			(at 143.51 29.8449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 143.51 32.3849 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 140.0048 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 140.0048 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 139.7 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11052,6 +14754,75 @@
 			(project "Structure_PCB"
 				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
 					(reference "HS83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
+		(at 101.6 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea3c0eed-301d-4513-afdc-64029f7139ff")
+		(property "Reference" "HS106"
+			(at 105.41 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 105.41 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 101.9048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.9048 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d62f705-1d36-411e-aaa1-b67b12f3bcfc")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS106")
 					(unit 1)
 				)
 			)
@@ -11204,6 +14975,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 95.25 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f14e7d58-9a58-4ae7-a7d2-54335a495a53")
+		(property "Reference" "#PWR014"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2e25068-5644-49fe-bf01-281aea295b27")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
 		(at 49.53 60.96 0)
 		(unit 1)
@@ -11273,8 +15110,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 261.62 55.88 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 254 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -11283,7 +15120,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6d7f983-2f6c-4495-acc0-84ce39b95b74")
 		(property "Reference" "H12"
-			(at 264.16 54.6099 0)
+			(at 256.54 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11291,17 +15128,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 264.16 57.1499 0)
+		(property "Value" "MountingHole_Pad"
+			(at 256.54 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 261.62 55.88 0)
+			(at 254 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11310,7 +15148,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 261.62 55.88 0)
+			(at 254 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11318,14 +15156,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 261.62 55.88 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 254 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "943e3476-1134-4c74-af23-7b89da977985")
 		)
 		(instances
 			(project "Structure_PCB"
@@ -11407,6 +15248,75 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Heatsink_Pad")
+		(at 133.35 87.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8bde832-c4e6-45a4-af2a-d70cbf61674a")
+		(property "Reference" "HS116"
+			(at 137.16 85.7249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Heatsink_Pad"
+			(at 137.16 88.2649 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Heatsink:würth 5x5 heat pads"
+			(at 133.6548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.6548 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Heatsink with electrical connection, 1 pin"
+			(at 133.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df3430b4-b870-4fe3-a4c1-d9e713e96021")
+		)
+		(instances
+			(project "Structure_PCB"
+				(path "/6b5e11c5-042c-4871-8828-d1d1e7f237a0"
+					(reference "HS116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Heatsink_Pad")
 		(at 17.78 46.99 0)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -11475,8 +15385,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 200.66 73.66 0)
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 208.28 55.88 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -11485,7 +15395,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc9a2b6f-e3ca-4ccf-9e29-f4f5ca3c7194")
 		(property "Reference" "H14"
-			(at 203.2 72.3899 0)
+			(at 210.82 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11493,17 +15403,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole"
-			(at 203.2 74.9299 0)
+		(property "Value" "MountingHole_Pad"
+			(at 210.82 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Mounting_Wuerth:Mounting_Wuerth_WA-SMSR-3.2mm_H4.6mm_ReverseMount_9775046960"
-			(at 200.66 73.66 0)
+			(at 208.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11512,7 +15423,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 73.66 0)
+			(at 208.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11520,14 +15431,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
-			(at 200.66 73.66 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 208.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "1"
+			(uuid "f9ee4cd9-a608-4c17-9c56-afc0c8becde7")
 		)
 		(instances
 			(project "Structure_PCB"
