@@ -6963,7 +6963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://gfinder.findernet.com/assets/Series/354/S30EN.pdf"
+		(property "Datasheet" "https://cdn.findernet.com/app/uploads/S40EN.pdf"
 			(at 133.35 149.86 0)
 			(effects
 				(font
