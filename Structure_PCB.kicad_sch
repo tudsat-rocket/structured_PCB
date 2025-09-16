@@ -6944,7 +6944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FINDER-30.22"
+		(property "Value" "FINDER-40.61"
 			(at 149.86 151.1299 0)
 			(effects
 				(font
@@ -6954,7 +6954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Relay_THT:Relay_DPDT_Finder_30.22"
+		(property "Footprint" "Relay_THT:Relay_SPDT_Finder_40.61"
 			(at 167.64 150.622 0)
 			(effects
 				(font
